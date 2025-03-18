@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* responsive */
+
+@media screen and (min-width: 768px) {
+  main {
+    display: block;
+    height: 100vh;
+    max-width: 768px;
+    margin: auto;
+    justify-items: center;
+  }
+
+  .login {
+    display: inline-flex;
+    width: 40em;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  .text-login {
+    text-align: center;
+    margin: 2.25em;
+  }
+}
