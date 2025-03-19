@@ -22,7 +22,7 @@ main {
   margin: auto;
 }
 
-.login {
+.container-login {
   /* inline-flex para colocar lado a lado */
   display: block;
   text-align: center;
@@ -35,11 +35,28 @@ main {
 .text-login {
 }
 
+.container-header {
+  display: block;
+
+  justify-items: left;
+  color: #fff;
+  padding: 0.5em;
+}
+
 h1 {
   font-size: 1.5em;
   color: #fff;
-  padding: 1em;
+  padding: 1em 0 0 1em;
 }
+
+.slogan {
+  font-size: 0.7em;
+  font-weight: 100;
+  color: #fff;
+  padding-top: 0.5em;
+  padding-left: 2.25em;
+}
+
 h2 {
   font-size: 1.5em;
   color: #fff;
@@ -123,4 +140,5 @@ footer {
   margin-top: 25em;
   align-items: center bottom;
   justify-items: bottom bottom;
+  border-top: 1px solid #8a92a11c;
 }
