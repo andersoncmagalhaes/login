@@ -53,17 +53,16 @@ section#login {
 
 section#login > div#text-login {
   display: block;
-  height: 80px;
+  height: 5em;
   text-align: center;
   margin-top: 2em;
 }
 
 section#login > div#login-form {
   display: block;
-  height: 200px;
-  text-align: left;
-  margin-top: 2em;
-  align-items: left;
+  height: 5em;
+  text-align: center;
+  margin-top: 1.5em;
 }
 
 section#login > #text-login h2 {
@@ -77,6 +76,8 @@ a#get-acess {
 
 div.input-box > label {
   display: none;
+  width: 5%;
+  align-items: right;
 }
 
 div.input-box > #icon {
@@ -100,8 +101,9 @@ div.input-box > input:focus {
 
 form > div.input-box {
   display: block;
+  position: absolute;
   align-items: center;
-  width: 100%;
+  width: 85%;
   height: 3em;
   margin: 2em 0;
 }
@@ -109,7 +111,8 @@ form > div.input-box {
 .btn-entrar {
   display: block;
   font-size: 1em;
-  width: 90%;
+  width: 100%;
+  align-items: center;
   background-color: var(--primary-color);
   color: var(--text-color);
   border: none;
