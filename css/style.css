@@ -37,7 +37,6 @@ section#login {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
 
   width: 300px;
   height: 500px;
@@ -47,6 +46,7 @@ section#login {
   border-radius: 1em;
   padding: 1em;
 
+  transform: translate(-50%, -50%);
   transition: width 0.3s, height 0.3s;
   transition-timing-function: ease;
 }
@@ -60,7 +60,6 @@ section#login > div#text-login {
 
 section#login > div#login-form {
   display: block;
-
   height: 200px;
   text-align: left;
   margin-top: 2em;
@@ -89,9 +88,9 @@ div.input-box > input {
   background-color: #111929;
   font-size: 1em;
   height: 50%;
-  transform: translateY(-7px);
   border: 0.1em solid var(--secondary-color);
   border-radius: 4px;
+  transform: translateY(-7px);
 }
 
 div.input-box > input:focus {
