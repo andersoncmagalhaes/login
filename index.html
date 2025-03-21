@@ -3,41 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+   
     <title>Tela de Login</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
-    <head class="header">
-        <div class="container-header">
-        <h1 class="logo">DevOcean</h1>
-        <h6 class="slogan">Find.Match.Hire. The IT Way.</h6>
-        </div>    
-    </head>
     <main>
-      <section class="container-login">
-        <div class="text-login"> 
-        <h2>Login</h1>
-        <p>
-          Login into your account
-        </p>
-        <h6>Don't have an account? <strong id="get-acess"> Get acess </strong></h6>
-       </div>
-
-        <div class="form">
-          <label for="email">Email</label>
-          <input  type="email" name="email" id="email" required />
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password" required />
-          <button type="submit" id="btn-login">Login</button>
-        </form>
-    </div>  
-      </section>
-      <footer>
-        <div class="footer">
-          <h6>©DevOcean Tech. All rights reserved.</h6>
+      <section id="login">
+        <div id="text-login">
+          <h2>DevMatch</h2>
+          <h4>Login into your account</h4>
+          <h6>
+            Don't have an account?<strong 
+              ><a id="get-acess" href="#"> Get acess</a></strong
+            >
+          </h6>
         </div>
-      </footer>
+
+        <div id="login-form">
+          <form action="login.php" method="POST" autocomplete="on">
+            
+            <div class="input-box">
+            <span class="material-symbols-outlined">person</span>
+            <input type="email" name="email" id="iemail"  placeholder="Email" autocomplete="email" required minlength="30"/>
+            <label for="iemail">Email</label>
+            
+             <div class="input-box">
+            <span  class="material-symbols-outlined">vpn_key</span>
+            <input type="password" name="password" id="ipassword"
+            placeholder="Password" autocomplete="current-password" required minlength="8"/> 
+            <label for="ipassword">Password</label>
+            
+        </div>
+            <button class="btn-entrar" type="submit">Login</button>
+        </div>
+      </section>
     </main>
   </body>
 </html>
