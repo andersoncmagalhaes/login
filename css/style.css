@@ -20,9 +20,9 @@
 
 body,
 html {
+  margin: 0;
   background-color: var(--bg-color);
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
   color: var(--text-color);
   font-family: var(--font-family);
 }
@@ -80,6 +80,25 @@ div.input-box > label {
   display: none;
 }
 
+div.input-box > #icon {
+  font-size: 1.5em;
+  align-items: center;
+}
+
+div.input-box > input {
+  background-color: #111929;
+  font-size: 1em;
+  height: 50%;
+  transform: translateY(-7px);
+  border: 0.1em solid var(--secondary-color);
+  border-radius: 4px;
+}
+
+div.input-box > input:focus {
+  border: 0.1em solid var(--primary-color);
+  background-color: var(--text-color);
+}
+
 form > div.input-box {
   display: block;
   align-items: center;
@@ -91,7 +110,7 @@ form > div.input-box {
 .btn-entrar {
   display: block;
   font-size: 1em;
-  width: 100%;
+  width: 90%;
   background-color: var(--primary-color);
   color: var(--text-color);
   border: none;
@@ -105,4 +124,11 @@ form > div.input-box {
 
 .btn-entrar:active {
   background-color: var(--secondary-color);
+}
+
+footer p {
+  text-align: center;
+  margin-top: 1em;
+  color: var(--secondary-color);
+  font-size: 0.8em;
 }
